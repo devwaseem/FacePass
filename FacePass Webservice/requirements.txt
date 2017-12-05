@@ -1,0 +1,10 @@
+click==6.7
+Flask==0.12.2
+itsdangerous==0.24
+Jinja2==2.9.6
+MarkupSafe==1.0
+numpy==1.13.1
+opencv-contrib-python==3.3.0.10
+Werkzeug==0.12.2
+Pillow==4.2.1
+gunicorn

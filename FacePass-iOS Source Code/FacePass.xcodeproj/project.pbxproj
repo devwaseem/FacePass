@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7515CB4F1F78050500C12F3C /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7515CB4E1F78050500C12F3C /* AppColors.swift */; };
+		7515CB511F78054300C12F3C /* Face Detection enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7515CB501F78054300C12F3C /* Face Detection enums.swift */; };
+		7521C01E1F7D513100A823CB /* FPMsgBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521C01D1F7D513100A823CB /* FPMsgBox.swift */; };
+		752CC9B41F7E158C00C248FE /* MessageVC + keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752CC9B31F7E158C00C248FE /* MessageVC + keyboard.swift */; };
+		752CC9B71F7E164900C248FE /* MessageVC + messageCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752CC9B61F7E164900C248FE /* MessageVC + messageCollection.swift */; };
+		752CC9B91F7E189000C248FE /* MSGCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752CC9B81F7E189000C248FE /* MSGCell.swift */; };
+		752CC9BB1F7E193C00C248FE /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752CC9BA1F7E193C00C248FE /* Messages.swift */; };
+		752CC9BD1F7E525900C248FE /* Misc extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752CC9BC1F7E525800C248FE /* Misc extensions.swift */; };
+		752CC9BF1F7E5C7800C248FE /* MaincameraVC  extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752CC9BE1F7E5C7700C248FE /* MaincameraVC  extension.swift */; };
+		7538CB861F80114900C77CB8 /* FPValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7538CB851F80114900C77CB8 /* FPValues.swift */; };
+		7538CB881F80270B00C77CB8 /* newFaceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7538CB871F80270B00C77CB8 /* newFaceProtocol.swift */; };
+		7538CB8A1F81249400C77CB8 /* FPButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7538CB891F81249300C77CB8 /* FPButton.swift */; };
+		754DE8AC1F79571C00251702 /* onboardingcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754DE8AB1F79571C00251702 /* onboardingcell.swift */; };
+		754DE8AF1F79736A00251702 /* MainCamDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754DE8AE1F79736A00251702 /* MainCamDetectionViewController.swift */; };
+		755625171F83D39E003D37A5 /* reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755625161F83D39E003D37A5 /* reachability.swift */; };
+		755625191F840B15003D37A5 /* NewFaceIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755625181F840B15003D37A5 /* NewFaceIntroViewController.swift */; };
+		757CA4021F8A3DC000E5947E /* UIView Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CA3FF1F8A3D2F00E5947E /* UIView Extensions.swift */; };
+		757CA4031F8A3DC000E5947E /* UIView+Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CA4001F8A3D2F00E5947E /* UIView+Anchors.swift */; };
+		757CA4041F8A3DC000E5947E /* UIViewController extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CA4011F8A3D2F00E5947E /* UIViewController extensions.swift */; };
+		75918A7E1F87ED4C00FDA210 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75918A7D1F87ED4B00FDA210 /* GoogleService-Info.plist */; };
+		75AD3E2C1F77EABF00D0A0F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AD3E2B1F77EABF00D0A0F4 /* AppDelegate.swift */; };
+		75AD3E2E1F77EABF00D0A0F4 /* onBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AD3E2D1F77EABF00D0A0F4 /* onBoardingViewController.swift */; };
+		75AD3E311F77EABF00D0A0F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75AD3E2F1F77EABF00D0A0F4 /* Main.storyboard */; };
+		75AD3E331F77EABF00D0A0F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75AD3E321F77EABF00D0A0F4 /* Assets.xcassets */; };
+		75AD3E361F77EABF00D0A0F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75AD3E341F77EABF00D0A0F4 /* LaunchScreen.storyboard */; };
+		75C0F66A1F7C031D00994A0A /* cSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C0F6691F7C031D00994A0A /* cSwitch.swift */; };
+		75C0F66C1F7C08E300994A0A /* FPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C0F66B1F7C08E300994A0A /* FPTextField.swift */; };
+		75C0F66E1F7C1BD300994A0A /* ConfirmFaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C0F66D1F7C1BD300994A0A /* ConfirmFaceViewController.swift */; };
+		75C0F6701F7C252500994A0A /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C0F66F1F7C252500994A0A /* MessageViewController.swift */; };
+		75DCE1B61F7E6D1D00E46668 /* cameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DCE1B51F7E6D1D00E46668 /* cameraButton.swift */; };
+		75DCE1B81F7F4E6800E46668 /* FPAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DCE1B71F7F4E6700E46668 /* FPAlert.swift */; };
+		75DCE1BA1F7FA07F00E46668 /* cameraRotateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DCE1B91F7FA07F00E46668 /* cameraRotateButton.swift */; };
+		75ED437E1F7BED13002BFE4F /* NewFaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED437D1F7BED13002BFE4F /* NewFaceViewController.swift */; };
+		75F56A9D1F7AC34800A555E7 /* RecognizeErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F56A9C1F7AC34800A555E7 /* RecognizeErrorViewController.swift */; };
+		D57C8E0C3CF5416ED27F23B9 /* Pods_FacePass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D7764B6A6E56E76BFDE53D /* Pods_FacePass.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		65D7764B6A6E56E76BFDE53D /* Pods_FacePass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FacePass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7515CB4E1F78050500C12F3C /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		7515CB501F78054300C12F3C /* Face Detection enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Face Detection enums.swift"; sourceTree = "<group>"; };
+		7521C01D1F7D513100A823CB /* FPMsgBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPMsgBox.swift; sourceTree = "<group>"; };
+		752CC9B31F7E158C00C248FE /* MessageVC + keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MessageVC + keyboard.swift"; sourceTree = "<group>"; };
+		752CC9B61F7E164900C248FE /* MessageVC + messageCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MessageVC + messageCollection.swift"; sourceTree = "<group>"; };
+		752CC9B81F7E189000C248FE /* MSGCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSGCell.swift; sourceTree = "<group>"; };
+		752CC9BA1F7E193C00C248FE /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		752CC9BC1F7E525800C248FE /* Misc extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Misc extensions.swift"; sourceTree = "<group>"; };
+		752CC9BE1F7E5C7700C248FE /* MaincameraVC  extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MaincameraVC  extension.swift"; sourceTree = "<group>"; };
+		7538CB851F80114900C77CB8 /* FPValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPValues.swift; sourceTree = "<group>"; };
+		7538CB871F80270B00C77CB8 /* newFaceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newFaceProtocol.swift; sourceTree = "<group>"; };
+		7538CB891F81249300C77CB8 /* FPButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPButton.swift; sourceTree = "<group>"; };
+		754DE8AB1F79571C00251702 /* onboardingcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onboardingcell.swift; sourceTree = "<group>"; };
+		754DE8AE1F79736A00251702 /* MainCamDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCamDetectionViewController.swift; sourceTree = "<group>"; };
+		755625161F83D39E003D37A5 /* reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reachability.swift; sourceTree = "<group>"; };
+		755625181F840B15003D37A5 /* NewFaceIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFaceIntroViewController.swift; sourceTree = "<group>"; };
+		757CA3FF1F8A3D2F00E5947E /* UIView Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView Extensions.swift"; sourceTree = "<group>"; };
+		757CA4001F8A3D2F00E5947E /* UIView+Anchors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Anchors.swift"; sourceTree = "<group>"; };
+		757CA4011F8A3D2F00E5947E /* UIViewController extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController extensions.swift"; sourceTree = "<group>"; };
+		75918A7D1F87ED4B00FDA210 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		75AD3E281F77EABF00D0A0F4 /* FacePass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacePass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75AD3E2B1F77EABF00D0A0F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75AD3E2D1F77EABF00D0A0F4 /* onBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onBoardingViewController.swift; sourceTree = "<group>"; };
+		75AD3E301F77EABF00D0A0F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75AD3E321F77EABF00D0A0F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75AD3E351F77EABF00D0A0F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		75AD3E371F77EABF00D0A0F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75C0F6691F7C031D00994A0A /* cSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cSwitch.swift; sourceTree = "<group>"; };
+		75C0F66B1F7C08E300994A0A /* FPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPTextField.swift; sourceTree = "<group>"; };
+		75C0F66D1F7C1BD300994A0A /* ConfirmFaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmFaceViewController.swift; sourceTree = "<group>"; };
+		75C0F66F1F7C252500994A0A /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		75DCE1B51F7E6D1D00E46668 /* cameraButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraButton.swift; sourceTree = "<group>"; };
+		75DCE1B71F7F4E6700E46668 /* FPAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPAlert.swift; sourceTree = "<group>"; };
+		75DCE1B91F7FA07F00E46668 /* cameraRotateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraRotateButton.swift; sourceTree = "<group>"; };
+		75ED437D1F7BED13002BFE4F /* NewFaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFaceViewController.swift; sourceTree = "<group>"; };
+		75F56A9C1F7AC34800A555E7 /* RecognizeErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognizeErrorViewController.swift; sourceTree = "<group>"; };
+		9E3B43E0F7F4757CDB894A4A /* Pods-FacePass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacePass.release.xcconfig"; path = "Pods/Target Support Files/Pods-FacePass/Pods-FacePass.release.xcconfig"; sourceTree = "<group>"; };
+		FA54E7FA67F733FC6144B344 /* Pods-FacePass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacePass.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FacePass/Pods-FacePass.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75AD3E251F77EABF00D0A0F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D57C8E0C3CF5416ED27F23B9 /* Pods_FacePass.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		752CC9B51F7E161200C248FE /* MessageVC */ = {
+			isa = PBXGroup;
+			children = (
+				75C0F66F1F7C252500994A0A /* MessageViewController.swift */,
+				752CC9B31F7E158C00C248FE /* MessageVC + keyboard.swift */,
+				752CC9B61F7E164900C248FE /* MessageVC + messageCollection.swift */,
+				752CC9B81F7E189000C248FE /* MSGCell.swift */,
+			);
+			path = MessageVC;
+			sourceTree = "<group>";
+		};
+		754DE8AD1F79733200251702 /* onBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				75AD3E2D1F77EABF00D0A0F4 /* onBoardingViewController.swift */,
+				754DE8AB1F79571C00251702 /* onboardingcell.swift */,
+			);
+			path = onBoarding;
+			sourceTree = "<group>";
+		};
+		75AD3E1F1F77EABF00D0A0F4 = {
+			isa = PBXGroup;
+			children = (
+				75AD3E2A1F77EABF00D0A0F4 /* FacePass */,
+				75AD3E291F77EABF00D0A0F4 /* Products */,
+				D7DD9AD6A797C6EDBEEC3F30 /* Pods */,
+				C3128211EEB3DFFC1F66A30A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		75AD3E291F77EABF00D0A0F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75AD3E281F77EABF00D0A0F4 /* FacePass.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75AD3E2A1F77EABF00D0A0F4 /* FacePass */ = {
+			isa = PBXGroup;
+			children = (
+				75918A7D1F87ED4B00FDA210 /* GoogleService-Info.plist */,
+				75AD3E2B1F77EABF00D0A0F4 /* AppDelegate.swift */,
+				75AD3E401F77EB9900D0A0F4 /* supporting Files */,
+				75AD3E3F1F77EB8F00D0A0F4 /* viewcontrollers */,
+				75AD3E3E1F77EB8000D0A0F4 /* model */,
+				75AD3E3D1F77EB7A00D0A0F4 /* view */,
+				75AD3E2F1F77EABF00D0A0F4 /* Main.storyboard */,
+				75AD3E321F77EABF00D0A0F4 /* Assets.xcassets */,
+				75AD3E341F77EABF00D0A0F4 /* LaunchScreen.storyboard */,
+				75AD3E371F77EABF00D0A0F4 /* Info.plist */,
+			);
+			path = FacePass;
+			sourceTree = "<group>";
+		};
+		75AD3E3D1F77EB7A00D0A0F4 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				75C0F6691F7C031D00994A0A /* cSwitch.swift */,
+				75C0F66B1F7C08E300994A0A /* FPTextField.swift */,
+				7521C01D1F7D513100A823CB /* FPMsgBox.swift */,
+				75DCE1B51F7E6D1D00E46668 /* cameraButton.swift */,
+				75DCE1B71F7F4E6700E46668 /* FPAlert.swift */,
+				75DCE1B91F7FA07F00E46668 /* cameraRotateButton.swift */,
+				7538CB871F80270B00C77CB8 /* newFaceProtocol.swift */,
+				7538CB891F81249300C77CB8 /* FPButton.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		75AD3E3E1F77EB8000D0A0F4 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				7515CB4E1F78050500C12F3C /* AppColors.swift */,
+				7515CB501F78054300C12F3C /* Face Detection enums.swift */,
+				752CC9BA1F7E193C00C248FE /* Messages.swift */,
+				7538CB851F80114900C77CB8 /* FPValues.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		75AD3E3F1F77EB8F00D0A0F4 /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				752CC9B51F7E161200C248FE /* MessageVC */,
+				754DE8AD1F79733200251702 /* onBoarding */,
+				75F56A9C1F7AC34800A555E7 /* RecognizeErrorViewController.swift */,
+				755625181F840B15003D37A5 /* NewFaceIntroViewController.swift */,
+				75ED437D1F7BED13002BFE4F /* NewFaceViewController.swift */,
+				75C0F66D1F7C1BD300994A0A /* ConfirmFaceViewController.swift */,
+				754DE8AE1F79736A00251702 /* MainCamDetectionViewController.swift */,
+				752CC9BE1F7E5C7700C248FE /* MaincameraVC  extension.swift */,
+			);
+			path = viewcontrollers;
+			sourceTree = "<group>";
+		};
+		75AD3E401F77EB9900D0A0F4 /* supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				757CA3FF1F8A3D2F00E5947E /* UIView Extensions.swift */,
+				757CA4001F8A3D2F00E5947E /* UIView+Anchors.swift */,
+				757CA4011F8A3D2F00E5947E /* UIViewController extensions.swift */,
+				752CC9BC1F7E525800C248FE /* Misc extensions.swift */,
+				755625161F83D39E003D37A5 /* reachability.swift */,
+			);
+			path = "supporting Files";
+			sourceTree = "<group>";
+		};
+		C3128211EEB3DFFC1F66A30A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65D7764B6A6E56E76BFDE53D /* Pods_FacePass.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7DD9AD6A797C6EDBEEC3F30 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA54E7FA67F733FC6144B344 /* Pods-FacePass.debug.xcconfig */,
+				9E3B43E0F7F4757CDB894A4A /* Pods-FacePass.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75AD3E271F77EABF00D0A0F4 /* FacePass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75AD3E3A1F77EABF00D0A0F4 /* Build configuration list for PBXNativeTarget "FacePass" */;
+			buildPhases = (
+				09CA884B857BF8827067CD0B /* [CP] Check Pods Manifest.lock */,
+				75AD3E241F77EABF00D0A0F4 /* Sources */,
+				75AD3E251F77EABF00D0A0F4 /* Frameworks */,
+				75AD3E261F77EABF00D0A0F4 /* Resources */,
+				087DC3FC6A0F75DF8BA920F8 /* [CP] Embed Pods Frameworks */,
+				A195BD43A2CE2E316EB80F25 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FacePass;
+			productName = FacePass;
+			productReference = 75AD3E281F77EABF00D0A0F4 /* FacePass.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75AD3E201F77EABF00D0A0F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Haze;
+				TargetAttributes = {
+					75AD3E271F77EABF00D0A0F4 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+				};
+			};
+			buildConfigurationList = 75AD3E231F77EABF00D0A0F4 /* Build configuration list for PBXProject "FacePass" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75AD3E1F1F77EABF00D0A0F4;
+			productRefGroup = 75AD3E291F77EABF00D0A0F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75AD3E271F77EABF00D0A0F4 /* FacePass */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75AD3E261F77EABF00D0A0F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75AD3E361F77EABF00D0A0F4 /* LaunchScreen.storyboard in Resources */,
+				75918A7E1F87ED4C00FDA210 /* GoogleService-Info.plist in Resources */,
+				75AD3E331F77EABF00D0A0F4 /* Assets.xcassets in Resources */,
+				75AD3E311F77EABF00D0A0F4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		087DC3FC6A0F75DF8BA920F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FacePass/Pods-FacePass-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ISEmojiView/ISEmojiView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyPeasy.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ISEmojiView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FacePass/Pods-FacePass-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		09CA884B857BF8827067CD0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FacePass-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A195BD43A2CE2E316EB80F25 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FacePass/Pods-FacePass-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75AD3E241F77EABF00D0A0F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				757CA4021F8A3DC000E5947E /* UIView Extensions.swift in Sources */,
+				757CA4031F8A3DC000E5947E /* UIView+Anchors.swift in Sources */,
+				757CA4041F8A3DC000E5947E /* UIViewController extensions.swift in Sources */,
+				75DCE1B61F7E6D1D00E46668 /* cameraButton.swift in Sources */,
+				75F56A9D1F7AC34800A555E7 /* RecognizeErrorViewController.swift in Sources */,
+				75C0F66A1F7C031D00994A0A /* cSwitch.swift in Sources */,
+				75AD3E2E1F77EABF00D0A0F4 /* onBoardingViewController.swift in Sources */,
+				75ED437E1F7BED13002BFE4F /* NewFaceViewController.swift in Sources */,
+				752CC9B91F7E189000C248FE /* MSGCell.swift in Sources */,
+				755625191F840B15003D37A5 /* NewFaceIntroViewController.swift in Sources */,
+				75DCE1B81F7F4E6800E46668 /* FPAlert.swift in Sources */,
+				752CC9B71F7E164900C248FE /* MessageVC + messageCollection.swift in Sources */,
+				752CC9BD1F7E525900C248FE /* Misc extensions.swift in Sources */,
+				75C0F6701F7C252500994A0A /* MessageViewController.swift in Sources */,
+				754DE8AF1F79736A00251702 /* MainCamDetectionViewController.swift in Sources */,
+				754DE8AC1F79571C00251702 /* onboardingcell.swift in Sources */,
+				7515CB511F78054300C12F3C /* Face Detection enums.swift in Sources */,
+				75C0F66E1F7C1BD300994A0A /* ConfirmFaceViewController.swift in Sources */,
+				755625171F83D39E003D37A5 /* reachability.swift in Sources */,
+				7538CB8A1F81249400C77CB8 /* FPButton.swift in Sources */,
+				7515CB4F1F78050500C12F3C /* AppColors.swift in Sources */,
+				7538CB881F80270B00C77CB8 /* newFaceProtocol.swift in Sources */,
+				752CC9B41F7E158C00C248FE /* MessageVC + keyboard.swift in Sources */,
+				752CC9BF1F7E5C7800C248FE /* MaincameraVC  extension.swift in Sources */,
+				75C0F66C1F7C08E300994A0A /* FPTextField.swift in Sources */,
+				75AD3E2C1F77EABF00D0A0F4 /* AppDelegate.swift in Sources */,
+				752CC9BB1F7E193C00C248FE /* Messages.swift in Sources */,
+				7521C01E1F7D513100A823CB /* FPMsgBox.swift in Sources */,
+				75DCE1BA1F7FA07F00E46668 /* cameraRotateButton.swift in Sources */,
+				7538CB861F80114900C77CB8 /* FPValues.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		75AD3E2F1F77EABF00D0A0F4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75AD3E301F77EABF00D0A0F4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		75AD3E341F77EABF00D0A0F4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75AD3E351F77EABF00D0A0F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75AD3E381F77EABF00D0A0F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		75AD3E391F77EABF00D0A0F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75AD3E3B1F77EABF00D0A0F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA54E7FA67F733FC6144B344 /* Pods-FacePass.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 95ZSDTGBXX;
+				INFOPLIST_FILE = FacePass/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hazecorp.FacePass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75AD3E3C1F77EABF00D0A0F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E3B43E0F7F4757CDB894A4A /* Pods-FacePass.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 95ZSDTGBXX;
+				INFOPLIST_FILE = FacePass/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hazecorp.FacePass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75AD3E231F77EABF00D0A0F4 /* Build configuration list for PBXProject "FacePass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75AD3E381F77EABF00D0A0F4 /* Debug */,
+				75AD3E391F77EABF00D0A0F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75AD3E3A1F77EABF00D0A0F4 /* Build configuration list for PBXNativeTarget "FacePass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75AD3E3B1F77EABF00D0A0F4 /* Debug */,
+				75AD3E3C1F77EABF00D0A0F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75AD3E201F77EABF00D0A0F4 /* Project object */;
+}
