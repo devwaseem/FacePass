@@ -18,8 +18,8 @@ Build and run the project in xcode to test the App.
 
 To test out the Facial recognition API in local machine follow the steps given below:
 
-1.install virtualenv:
-`pip install virtualenv`
+1.change directory to webservice dir:
+`cd FacePass\ Webservice`
 
 2.create a virual environment:
  `virtualenv facepassenv`
@@ -27,15 +27,15 @@ To test out the Facial recognition API in local machine follow the steps given b
 3.activate virtualenv:
 `source facepassenv/bin/activate`
 
-4.change directory to webservice dir:
-`cd FacePass\ Webservice`
+4.install virtualenv:
+`pip install virtualenv`
 
 5.install the required dependencies:
 `pip install -r requirements.txt`
 
 this will install the required dependencies for the project automatically
 
-6.Now the flask app using:
+6.Now run the flask app using:
 `python runApp.py`
 
 Now you will get something like this:
