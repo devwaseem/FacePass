@@ -8,7 +8,11 @@ We developed a Ask.fm / Sarahah clone but with facial recognition capabilities w
 
 [click me to see a demo video](https://drive.google.com/open?id=0B1InhyZ75GkVV2hYYkVjYXpIdDQ)
 
-## Installation:
+## How the App Looks
+![Alt text](https://pbs.twimg.com/media/DQsR_HRW0AA3m2G.jpg)
+![Alt text](https://pbs.twimg.com/media/DQsR_HNWkAAzQjU.jpg)
+
+## API Installation: (local machine)
 
 Build and run the project in xcode to test the App.
 
