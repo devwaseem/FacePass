@@ -8,9 +8,9 @@ We developed a Ask.fm / Sarahah clone but with facial recognition capabilities w
 
 ## Installation:
 
-Build and run the project in xcode to test the facial recognition feature.
+Build and run the project in xcode to test the App.
 
-To test out the _Webservice_ or code behind the facial recognition follow the steps given below:
+To test out the Facial recognition API in local machine follow the steps given below:
 
 1.install virtualenv:
 `pip install virtualenv`
@@ -46,5 +46,18 @@ you will be welcomed with the project name.
 
 At this stage the project is working fine.
 you are ready to test the Facial recognition API
+
+## API Calls
+
+we recommend to use Postman App for making API calls
+
+### obtaining UID
+**GET::**`localhost:5000/getUID/`
+
+This API will return unique ID(this will generated randomly and it changes for every second), this ID should be included in other API calls too. save this UID somewhere temporary or if you are using some database first save this UID and the user name and data.
+it is recommended to use this UID instead of your own generated UID to prevent the overwriting of other users models.
+
+
+
 
 
