@@ -26,7 +26,6 @@
 		757CA4021F8A3DC000E5947E /* UIView Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CA3FF1F8A3D2F00E5947E /* UIView Extensions.swift */; };
 		757CA4031F8A3DC000E5947E /* UIView+Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CA4001F8A3D2F00E5947E /* UIView+Anchors.swift */; };
 		757CA4041F8A3DC000E5947E /* UIViewController extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CA4011F8A3D2F00E5947E /* UIViewController extensions.swift */; };
-		75918A7E1F87ED4C00FDA210 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75918A7D1F87ED4B00FDA210 /* GoogleService-Info.plist */; };
 		75AD3E2C1F77EABF00D0A0F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AD3E2B1F77EABF00D0A0F4 /* AppDelegate.swift */; };
 		75AD3E2E1F77EABF00D0A0F4 /* onBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AD3E2D1F77EABF00D0A0F4 /* onBoardingViewController.swift */; };
 		75AD3E311F77EABF00D0A0F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75AD3E2F1F77EABF00D0A0F4 /* Main.storyboard */; };
@@ -36,6 +35,16 @@
 		75C0F66C1F7C08E300994A0A /* FPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C0F66B1F7C08E300994A0A /* FPTextField.swift */; };
 		75C0F66E1F7C1BD300994A0A /* ConfirmFaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C0F66D1F7C1BD300994A0A /* ConfirmFaceViewController.swift */; };
 		75C0F6701F7C252500994A0A /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C0F66F1F7C252500994A0A /* MessageViewController.swift */; };
+		75D808A11FE6290F009726ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75D808A01FE6290F009726ED /* GoogleService-Info.plist */; };
+		75D808A31FE63EAB009726ED /* TruefaceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D808A21FE63EAB009726ED /* TruefaceAPI.swift */; };
+		75D808A71FE6B5D7009726ED /* check1.json in Resources */ = {isa = PBXBuildFile; fileRef = 75D808A61FE6B5D7009726ED /* check1.json */; };
+		75D808A91FE6B5E4009726ED /* cloud blue.json in Resources */ = {isa = PBXBuildFile; fileRef = 75D808A81FE6B5E3009726ED /* cloud blue.json */; };
+		75D808AD1FE6B5FB009726ED /* checkanim.json in Resources */ = {isa = PBXBuildFile; fileRef = 75D808AC1FE6B5FA009726ED /* checkanim.json */; };
+		75D808AF1FE6B604009726ED /* roundAnimButton.json in Resources */ = {isa = PBXBuildFile; fileRef = 75D808AE1FE6B604009726ED /* roundAnimButton.json */; };
+		75D808B11FE6B60E009726ED /* 2clouds.json in Resources */ = {isa = PBXBuildFile; fileRef = 75D808B01FE6B60D009726ED /* 2clouds.json */; };
+		75D808B71FE6B9EC009726ED /* face.json in Resources */ = {isa = PBXBuildFile; fileRef = 75D808B61FE6B9EC009726ED /* face.json */; };
+		75D808B91FE6E493009726ED /* loadingFill.json in Resources */ = {isa = PBXBuildFile; fileRef = 75D808B81FE6E492009726ED /* loadingFill.json */; };
+		75D808BC1FE6ED75009726ED /* waterFill.json in Resources */ = {isa = PBXBuildFile; fileRef = 75D808BB1FE6ED75009726ED /* waterFill.json */; };
 		75DCE1B61F7E6D1D00E46668 /* cameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DCE1B51F7E6D1D00E46668 /* cameraButton.swift */; };
 		75DCE1B81F7F4E6800E46668 /* FPAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DCE1B71F7F4E6700E46668 /* FPAlert.swift */; };
 		75DCE1BA1F7FA07F00E46668 /* cameraRotateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DCE1B91F7FA07F00E46668 /* cameraRotateButton.swift */; };
@@ -65,7 +74,6 @@
 		757CA3FF1F8A3D2F00E5947E /* UIView Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView Extensions.swift"; sourceTree = "<group>"; };
 		757CA4001F8A3D2F00E5947E /* UIView+Anchors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Anchors.swift"; sourceTree = "<group>"; };
 		757CA4011F8A3D2F00E5947E /* UIViewController extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController extensions.swift"; sourceTree = "<group>"; };
-		75918A7D1F87ED4B00FDA210 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		75AD3E281F77EABF00D0A0F4 /* FacePass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacePass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75AD3E2B1F77EABF00D0A0F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75AD3E2D1F77EABF00D0A0F4 /* onBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onBoardingViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +85,16 @@
 		75C0F66B1F7C08E300994A0A /* FPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPTextField.swift; sourceTree = "<group>"; };
 		75C0F66D1F7C1BD300994A0A /* ConfirmFaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmFaceViewController.swift; sourceTree = "<group>"; };
 		75C0F66F1F7C252500994A0A /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		75D808A01FE6290F009726ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../iOS PROJECTS/facepass/facepass2/FacePass/FacePass/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		75D808A21FE63EAB009726ED /* TruefaceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruefaceAPI.swift; sourceTree = "<group>"; };
+		75D808A61FE6B5D7009726ED /* check1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = check1.json; sourceTree = "<group>"; };
+		75D808A81FE6B5E3009726ED /* cloud blue.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cloud blue.json"; sourceTree = "<group>"; };
+		75D808AC1FE6B5FA009726ED /* checkanim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = checkanim.json; sourceTree = "<group>"; };
+		75D808AE1FE6B604009726ED /* roundAnimButton.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = roundAnimButton.json; sourceTree = "<group>"; };
+		75D808B01FE6B60D009726ED /* 2clouds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 2clouds.json; sourceTree = "<group>"; };
+		75D808B61FE6B9EC009726ED /* face.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = face.json; sourceTree = "<group>"; };
+		75D808B81FE6E492009726ED /* loadingFill.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loadingFill.json; sourceTree = "<group>"; };
+		75D808BB1FE6ED75009726ED /* waterFill.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = waterFill.json; path = "FacePass/lottie files/waterFill.json"; sourceTree = SOURCE_ROOT; };
 		75DCE1B51F7E6D1D00E46668 /* cameraButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraButton.swift; sourceTree = "<group>"; };
 		75DCE1B71F7F4E6700E46668 /* FPAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPAlert.swift; sourceTree = "<group>"; };
 		75DCE1B91F7FA07F00E46668 /* cameraRotateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraRotateButton.swift; sourceTree = "<group>"; };
@@ -139,7 +157,8 @@
 		75AD3E2A1F77EABF00D0A0F4 /* FacePass */ = {
 			isa = PBXGroup;
 			children = (
-				75918A7D1F87ED4B00FDA210 /* GoogleService-Info.plist */,
+				75D808BA1FE6E49B009726ED /* lottieAnimations */,
+				75D808A01FE6290F009726ED /* GoogleService-Info.plist */,
 				75AD3E2B1F77EABF00D0A0F4 /* AppDelegate.swift */,
 				75AD3E401F77EB9900D0A0F4 /* supporting Files */,
 				75AD3E3F1F77EB8F00D0A0F4 /* viewcontrollers */,
@@ -175,6 +194,7 @@
 				7515CB501F78054300C12F3C /* Face Detection enums.swift */,
 				752CC9BA1F7E193C00C248FE /* Messages.swift */,
 				7538CB851F80114900C77CB8 /* FPValues.swift */,
+				75D808A21FE63EAB009726ED /* TruefaceAPI.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -204,6 +224,21 @@
 				755625161F83D39E003D37A5 /* reachability.swift */,
 			);
 			path = "supporting Files";
+			sourceTree = "<group>";
+		};
+		75D808BA1FE6E49B009726ED /* lottieAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				75D808BB1FE6ED75009726ED /* waterFill.json */,
+				75D808B81FE6E492009726ED /* loadingFill.json */,
+				75D808B61FE6B9EC009726ED /* face.json */,
+				75D808B01FE6B60D009726ED /* 2clouds.json */,
+				75D808AE1FE6B604009726ED /* roundAnimButton.json */,
+				75D808AC1FE6B5FA009726ED /* checkanim.json */,
+				75D808A61FE6B5D7009726ED /* check1.json */,
+				75D808A81FE6B5E3009726ED /* cloud blue.json */,
+			);
+			path = lottieAnimations;
 			sourceTree = "<group>";
 		};
 		C3128211EEB3DFFC1F66A30A /* Frameworks */ = {
@@ -285,9 +320,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				75AD3E361F77EABF00D0A0F4 /* LaunchScreen.storyboard in Resources */,
-				75918A7E1F87ED4C00FDA210 /* GoogleService-Info.plist in Resources */,
+				75D808A11FE6290F009726ED /* GoogleService-Info.plist in Resources */,
+				75D808B11FE6B60E009726ED /* 2clouds.json in Resources */,
+				75D808AD1FE6B5FB009726ED /* checkanim.json in Resources */,
 				75AD3E331F77EABF00D0A0F4 /* Assets.xcassets in Resources */,
 				75AD3E311F77EABF00D0A0F4 /* Main.storyboard in Resources */,
+				75D808A71FE6B5D7009726ED /* check1.json in Resources */,
+				75D808A91FE6B5E4009726ED /* cloud blue.json in Resources */,
+				75D808BC1FE6ED75009726ED /* waterFill.json in Resources */,
+				75D808B91FE6E493009726ED /* loadingFill.json in Resources */,
+				75D808B71FE6B9EC009726ED /* face.json in Resources */,
+				75D808AF1FE6B604009726ED /* roundAnimButton.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,22 +344,26 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FacePass/Pods-FacePass-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/ISEmojiView/ISEmojiView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyPeasy.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ISEmojiView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +428,7 @@
 				754DE8AF1F79736A00251702 /* MainCamDetectionViewController.swift in Sources */,
 				754DE8AC1F79571C00251702 /* onboardingcell.swift in Sources */,
 				7515CB511F78054300C12F3C /* Face Detection enums.swift in Sources */,
+				75D808A31FE63EAB009726ED /* TruefaceAPI.swift in Sources */,
 				75C0F66E1F7C1BD300994A0A /* ConfirmFaceViewController.swift in Sources */,
 				755625171F83D39E003D37A5 /* reachability.swift in Sources */,
 				7538CB8A1F81249400C77CB8 /* FPButton.swift in Sources */,

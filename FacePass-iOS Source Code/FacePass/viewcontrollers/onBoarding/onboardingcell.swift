@@ -95,6 +95,7 @@ class onBoardingCell:UICollectionViewCell {
     }
     
     func setupCorners(){
+        self.layoutIfNeeded()
         inCircle.layer.cornerRadius = inCircle.frame.width/2
         outCircle.layer.cornerRadius = outCircle.frame.width/2
     }

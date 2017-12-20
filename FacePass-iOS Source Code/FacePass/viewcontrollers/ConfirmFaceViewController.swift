@@ -16,7 +16,7 @@ class ConfirmFaceViewController: UIViewController {
         return .lightContent
     }
     
-    var UID = 0
+    var UID = ""
     var profImgURl = ""
     
     let NextButton:FPButton = {
@@ -88,12 +88,11 @@ class ConfirmFaceViewController: UIViewController {
         profilePic.sd_setIndicatorStyle(UIActivityIndicatorViewStyle.white)
     }
     
-   
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
+        self.view.layoutIfNeeded()
         NextButton.layer.cornerRadius = NextButton.frame.height/2
         profilePic.layer.cornerRadius = max(profilePic.frame.height,profilePic.frame.width)/2
         self.view.bringSubview(toFront: backButton)
-        
     }
     
     func setupConstraints(){

@@ -84,19 +84,20 @@ class RecognizeErrorViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        self.view.layoutIfNeeded()
         view.backgroundColor = FPColors.blue
         inCircle.backgroundColor = UIColor.white
         outCircle.backgroundColor = UIColor.white.withAlphaComponent(0.2)
         titleLabel.text = "Couldn’t recognize your face"
         subtitlelabel.text = "Please retry by scanning the face on a highly lit or bright environment. "
-        
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
         outCircle.layer.cornerRadius = outCircle.frame.height/2
         inCircle.layer.cornerRadius = inCircle.frame.height/2
         retryButton.layer.cornerRadius = retryButton.frame.height/2
         addFaceButton.layer.cornerRadius = addFaceButton.frame.height/2
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+       
         
     }
 
@@ -108,6 +109,8 @@ class RecognizeErrorViewController: UIViewController {
            Top(40).to(view, .top),
            Size(self.view.frame.height/2.3)
         ]
+        
+        outCircle.layoutIfNeeded()
         
          inCircle <- [
             Center(),
@@ -141,6 +144,7 @@ class RecognizeErrorViewController: UIViewController {
         Bottom().to(retryButton,.top),
         Top().to(outCircle,.bottom)
         ]
+        
         
         titleLabel <- [
             Center(),

@@ -18,7 +18,7 @@ class MessageViewController: UIViewController,UITextFieldDelegate{
         return .lightContent
     }
     var delegate:ConfirmFaceViewController?
-    var UID = 0
+    var UID = ""
     var profImgUrl = ""
     
     var msgs = [Messages]()
@@ -80,6 +80,7 @@ class MessageViewController: UIViewController,UITextFieldDelegate{
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        self.view.layoutIfNeeded()
         profilePic.image = #imageLiteral(resourceName: "prof-ph")
         profilePic.clipsToBounds = true
         msgBox.layer.borderColor = FPColors.gray.withAlphaComponent(0.2).cgColor
@@ -89,6 +90,7 @@ class MessageViewController: UIViewController,UITextFieldDelegate{
         profilePic.sd_setImage(with: URL(string: profImgUrl), placeholderImage: #imageLiteral(resourceName: "prof-ph"), options: SDWebImageOptions.highPriority, completed: nil)
         profilePic.sd_setShowActivityIndicatorView(true)
         profilePic.sd_setIndicatorStyle(UIActivityIndicatorViewStyle.white)
+        profilePic.layer.cornerRadius = profilePic.frame.height/2
     }
     
     let alert = UIAlertController(title: "Fetching Messages..", message: "please wait", preferredStyle: .alert)
@@ -97,7 +99,6 @@ class MessageViewController: UIViewController,UITextFieldDelegate{
     var tempDict:[Int:Messages] = [:]
     
     override func viewDidAppear(_ animated: Bool) {
-        profilePic.layer.cornerRadius = profilePic.frame.height/2
         present(alert, animated: true, completion: nil)
         ref = Database.database().reference().child("users").child("\(UID)").child("messages")
         ref?.observeSingleEvent(of: .value, with: { (snapshot) in

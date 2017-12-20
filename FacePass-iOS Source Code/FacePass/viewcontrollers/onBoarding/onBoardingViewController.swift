@@ -54,15 +54,13 @@ class onBoardingViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         view.addSubviews(views: [NextButton,boards])
-
+      
         setupViewPositions()
         NextButton.addTarget(self, action: #selector(self.next(sender:)), for: .touchUpInside)
+          self.view.layoutIfNeeded()
+        NextButton.layer.cornerRadius = NextButton.frame.height/2
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        NextButton.layer.cornerRadius = NextButton.frame.height/2
-       
-    }
     
 
     

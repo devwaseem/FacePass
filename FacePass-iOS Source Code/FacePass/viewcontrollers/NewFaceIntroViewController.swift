@@ -85,21 +85,19 @@ class NewFaceIntroViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        self.view.layoutIfNeeded()
         view.backgroundColor = FPColors.blue
         inCircle.backgroundColor = UIColor.white
         outCircle.backgroundColor = UIColor.white.withAlphaComponent(0.2)
         titleLabel.text = "We’ve detected a new face!"
         subtitlelabel.text = "We shall now begin the process of training & saving your face. This shouldn’t be too long."
-        
-    }
-    
-    
-    override func viewDidAppear(_ animated: Bool) {
         outCircle.layer.cornerRadius = outCircle.frame.height/2
         inCircle.layer.cornerRadius = inCircle.frame.height/2
         knowButton.layer.cornerRadius = knowButton.frame.height/2
         startButton.layer.cornerRadius = startButton.frame.height/2
     }
+    
+    
   var isDefault = true
     
     func setupConstraints(){

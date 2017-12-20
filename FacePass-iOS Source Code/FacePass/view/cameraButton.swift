@@ -31,15 +31,15 @@ class cameraButton:UIView {
             Size(90).like(self)
         ]
         self.clipsToBounds = true
-        setupDefaultMode()
+        setCaptureMode()
     }
     
-    func setupDefaultMode(){
+    func setCaptureMode(){
         button.setImage(#imageLiteral(resourceName: "Circle"), for: .normal)
         button.backgroundColor = FPColors.blue
     }
     
-    func setupOkMode(){
+    func setOKConfirmationMode(){
         button.setImage(#imageLiteral(resourceName: "check"), for: .normal)
         button.backgroundColor = FPColors.green
     }

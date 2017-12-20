@@ -2,4 +2,84 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FacePass/viewcontrollers/MainCamDetectionViewController.swift"
+            timestampString = "535438928.78866"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "MainCamDetectionViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "variable initialization expression of FacePass.MainCamDetectionViewController.rotateCameraButton : FacePass.cameraRotateButton"
+                  moduleName = "FacePass"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/waseemakram/Desktop/FacePass/FacePass-iOS%20Source%20Code/FacePass/viewcontrollers/MainCamDetectionViewController.swift"
+                  timestampString = "535227238.324652"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FacePass.MainCamDetectionViewController.rotateCameraButton.getter : FacePass.cameraRotateButton"
+                  moduleName = "FacePass"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/waseemakram/Desktop/FacePass/FacePass-iOS%20Source%20Code/FacePass/viewcontrollers/MainCamDetectionViewController.swift"
+                  timestampString = "535227238.3616"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FacePass.MainCamDetectionViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; FacePass.MainCamDetectionViewController"
+                  moduleName = "FacePass"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/waseemakram/Desktop/FacePass/FacePass-iOS%20Source%20Code/FacePass/viewcontrollers/MainCamDetectionViewController.swift"
+                  timestampString = "535227238.364848"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "1552">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FacePass.MainCamDetectionViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;FacePass.MainCamDetectionViewController&gt;"
+                  moduleName = "FacePass"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/waseemakram/Desktop/FacePass/FacePass-iOS%20Source%20Code/FacePass/viewcontrollers/MainCamDetectionViewController.swift"
+                  timestampString = "535227238.36785"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "1508">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

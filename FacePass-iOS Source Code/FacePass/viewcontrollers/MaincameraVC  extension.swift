@@ -12,6 +12,7 @@ import UIKit
 import AVFoundation
 import FirebaseDatabase
 import SDWebImage
+import Alamofire
 
 extension MainCamDetectionViewController : AVCaptureMetadataOutputObjectsDelegate, AVCapturePhotoCaptureDelegate {
     
@@ -38,89 +39,43 @@ extension MainCamDetectionViewController : AVCaptureMetadataOutputObjectsDelegat
         }
         
         
-        if isDetectionMode {
-            self.pinAlert.isHidden = true
-            print("detecting face")
-            startFaceDetection()
+        if isTrainingModeActive {
             
-           
+            self.pinAlert.isHidden = true
+            startFaceTraining()
             
         }else if isRecognitionMode {
-           
             print("recognizing face")
             isRecognitionMode = false
-            isPicCaptured = false
+            isPhotoCapturedAndSaved = false
             outputImages = []
             capturePhoto()
             DispatchQueue.global().async {
+                //while is used because the photo capturing is aynchournous.. i.e, after sometime the photo was taken and saved(line 51).. at that time this block may be gone already. so (while) is used to stop or hold this block  until the photo is captured and saved correctly
                 while true {
-                    if self.isPicCaptured {
+                    if self.isPhotoCapturedAndSaved {
                         self.startRecognition()
                         break
                     }
                 }
-
+                
             }
         }
         
     }//metadataOutput
     
-    func startFaceDetection(){
-        if !isDetectionPicCaptured {
-            if isPicCaptured{
-                capturePhoto()
-                isPicCaptured = false
-            }
-                
-        }else {
-            isDetectionMode = false
+    func startFaceTraining(){
+        if isAllTrainingPicturesCaptured {
+            isTrainingModeActive = false
             presentNewface()
-        }
-        
-    }
-    
-
-    
-    func startRecognition(){
-        let alert = UIAlertController(title: "Scanning your Face", message: "Please wait", preferredStyle: .alert)
-        present(alert, animated: true, completion: nil)
-        let url = URL(string: FPValues.urls.recognize)
-        var request = URLRequest(url: url!)
-        request.httpMethod = "POST"
-        request.setValue("contentType", forHTTPHeaderField: "Content-Type")
-        print(outputImages)
-        request.httpBody = UIImageJPEGRepresentation(outputImages.first!, 1)
-        URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in
-            alert.dismiss(animated: true, completion: nil)
-            do {
-                let dict = try JSONSerialization.jsonObject(with: data!, options: []) as! [String:Any]
-                print(dict)
-                DispatchQueue.main.async {
-                    if (dict["recognized"] as! Bool ) == false {
-                            let vc = RecognizeErrorViewController()
-                            vc.delegate = self
-                            self.present(vc, animated: true, completion: {
-                                return
-                            })
-                    }else{
-                        print( dict["ID"] as! Int, dict["confidence"] as! Double)
-                        self.presentConfirmFace(UID: (dict["ID"] as! Int))
-                    }
-                    
-                   
-                }
-            }catch {
-                print("cannot convert to json")
+        }else {
+            if isPhotoCapturedAndSaved{
+                capturePhoto()
+                isPhotoCapturedAndSaved = false
             }
-            
-            Timer.scheduledTimer(withTimeInterval: 2, repeats: false, block: { (timer) in
-                self.outputImages = []
-            })
-            
-            
-        }).resume()
-        
+        }
     }
+    
     
     func photoOutput(_ captureOutput: AVCapturePhotoOutput, didFinishProcessingPhoto photoSampleBuffer: CMSampleBuffer?, previewPhoto previewPhotoSampleBuffer: CMSampleBuffer?, resolvedSettings: AVCaptureResolvedPhotoSettings, bracketSettings: AVCaptureBracketedStillImageSettings?, error: Error?) {
         
@@ -134,31 +89,30 @@ extension MainCamDetectionViewController : AVCaptureMetadataOutputObjectsDelegat
             
             if let image = UIImage(data: dataImage) {
                 outputImages.append(image)
-                isPicCaptured = true
+                isPhotoCapturedAndSaved = true
             }
             
-            if isDetectionMode {
-                if outputImages.count == 7 {
-                    isDetectionMode = false
-                    print("7",outputImages.count)
-                    makeAlert(as: FPValues.alertMessages.second)
-                }else if outputImages.count == 14 {
-                    isDetectionMode = false
-                    print("14",outputImages.count)
-                    makeAlert(as: FPValues.alertMessages.third)
-                }else if outputImages.count == 22 {
-                    isDetectionMode = false
-                    print("22",outputImages.count)
-                    makeAlert(as: FPValues.alertMessages.four)
-                }else if outputImages.count == 30{
-                    print("30",outputImages.count)
-                    isDetectionPicCaptured = true
+            if isTrainingModeActive {
+                if outputImages.count == Int(maximumNumberOfPhotosToBeCaptured/4)+1 {
+                    makeTrainingModeInactiveAndShowAlert(as: FPValues.alertMessages.second)
+                }else if outputImages.count == Int(maximumNumberOfPhotosToBeCaptured/4) * 2 + 1 {
+                    makeTrainingModeInactiveAndShowAlert(as: FPValues.alertMessages.third)
+                }else if outputImages.count == Int(maximumNumberOfPhotosToBeCaptured/4) * 3 + 1 {
+                    makeTrainingModeInactiveAndShowAlert(as: FPValues.alertMessages.four)
+                }else if outputImages.count == maximumNumberOfPhotosToBeCaptured{
+                    isAllTrainingPicturesCaptured = true
                 }
                 
             }
             
         }
     }//photoOutput
+    
+    private func makeTrainingModeInactiveAndShowAlert(as alertString:String){
+        isTrainingModeActive = false
+        showHint(as: alertString)
+        print(outputImages.count)
+    }
     
     func presentNewface(){
         DispatchQueue.main.async {
@@ -167,28 +121,104 @@ extension MainCamDetectionViewController : AVCaptureMetadataOutputObjectsDelegat
             vc.delegate = self
             vc.outputImages = self.outputImages
             self.outputImages = []
-            self.isDetectionPicCaptured = false
+            self.isAllTrainingPicturesCaptured = false
             self.present(vc as UIViewController, animated: true, completion: {
-                
             })
         }
     }
     
-    func presentConfirmFace(UID:Int){
+    func presentConfirmFace(UID:String){
         self.ref?.child("\(UID)").observeSingleEvent(of:DataEventType.value) { (datasnapshot) in
-            let dict = datasnapshot.value as! [String:AnyObject]
+            guard let dict = datasnapshot.value as? [String:AnyObject] else { return }
             let vc = ConfirmFaceViewController()
             vc.UID = UID
             vc.profImgURl = dict["profileImgUrl"] as! String
             vc.usernameLabel.text = (dict["username"] as? String)!
             vc.usernameLabel.isHidden = !(dict["isUsernamePublic"] as? Bool)!
-            self.present(vc, animated: true, completion: nil)
+            self.faceAnimation.stop()
+            self.faceAnimation.loopAnimation = false
+            self.hideHintBox()
+            self.faceAnimation.play(fromProgress: 0.5, toProgress: 0.9, withCompletion: { (_) in
+                self.present(vc, animated: true, completion: {
+                    self.camerabutton.isHidden = false
+                    self.rotateCameraButton.isHidden = false
+                    self.faceAnimation.stop()
+                })
+            })
+            
         }
         
     }
     
-}
+ 
+    
+    func startRecognition(){
+        DispatchQueue.main.async {
+            self.camerabutton.isHidden = true
+            self.rotateCameraButton.isHidden = true
+            self.faceAnimation.play(fromProgress: 0, toProgress: 0.5, withCompletion: nil)
+            self.hideHintBox()
+            self.showHint(as: "Scanning your Face 👀")
+        }
 
+        let url = URL(string: TrueFaceAPI.url.identifierURL)
+        let params = ["img":UIImageJPEGRepresentation(outputImages.first!, 1)?.base64EncodedString() ?? "",
+                      "collection_id":TrueFaceAPI.facePassCollectionID]
+        AlamofireManager.request(url!, method: .post, parameters: params, encoding: JSONEncoding.default, headers: TrueFaceAPI.header).responseJSON { (response) in
+            print(response)
+            let json = response.result.value as! [String:AnyObject]
+            if (json["message"] as! String ) == "no face detected." {
+                self.presentErrorScreen()
+            }else{
+                if let data = json["data"] as? NSArray {
+                    let dict = data[0] as! [String:AnyObject]
+                    if let UID = dict["key"] as? String {
+                        print( UID, dict["confidence"] as! Double,dict["name"] as! String )
+                        if dict["confidence"] as! Double > 0.90 {
+                            print("detected")
+                            DispatchQueue.main.async {
+                                 self.presentConfirmFace(UID: UID)
+                            }
+                        }else{
+                            self.presentErrorScreen()
+                        }
+                    }else{
+                        //no entry,people or key available
+                        print("no key available")
+                        self.presentErrorScreen()
+                    }
+                    
+                }else{
+                    //no data available
+                    print("no data available")
+                    self.presentErrorScreen()
+                }
+                
+            }
+            Timer.scheduledTimer(withTimeInterval: 2, repeats: false, block: { (timer) in
+                self.outputImages = []
+                
+            })
+            
+        }
+    }
+    
+    func presentErrorScreen(){
+        let vc = RecognizeErrorViewController()
+        vc.delegate = self
+        self.present(vc, animated: true, completion: {
+            return
+        })
+    }
+    
+    func showAlertWithOkButton(withTitle title:String,message:String){
+     let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okbutton = UIAlertAction(title: "ok", style: .default) { (_) in
+            alert.dismiss(animated: true, completion: nil)
+        }
+        self.present(alert, animated: true, completion: nil)
+    }
+}
 
 
 
