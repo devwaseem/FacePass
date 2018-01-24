@@ -29,7 +29,7 @@ class onBoardingViewController: UIViewController {
     
     let onboardingRes = [["Your face is your password","Scan the face of the people around you to view or post any comments"],
                          ["Know people around you","If the face doesn’t exist on our database already, kindly mention their name so we can remember your face"],
-                         ["Scan a face to get started","When the camera opens upon tapping Get Started, tap on the scan button and you can see his/her feed or profile."]]
+                         ["Scan a face to get started","When the camera opens, position your friend’s face inside the frame and then after your confirmation, you can see his/her feed or profile."]]
     
     let boards :UICollectionView = {
         let layout = UICollectionViewFlowLayout()

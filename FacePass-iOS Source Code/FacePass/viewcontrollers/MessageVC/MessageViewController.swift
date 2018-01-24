@@ -101,7 +101,9 @@ class MessageViewController: UIViewController,UITextFieldDelegate{
     override func viewDidAppear(_ animated: Bool) {
         present(alert, animated: true, completion: nil)
         ref = Database.database().reference().child("users").child("\(UID)").child("messages")
-        ref?.observeSingleEvent(of: .value, with: { (snapshot) in
+
+        ref?.observe(.value, with:  { (snapshot) in
+            print(snapshot)
             let dict = snapshot.value as! [String:AnyObject]
             for (key,_) in dict {
                 if key != "count" {
@@ -110,14 +112,14 @@ class MessageViewController: UIViewController,UITextFieldDelegate{
                 }
             }
             let sortedKeys = Array(self.tempDict.keys).sorted()
+            self.msgs = []
             for i in sortedKeys {
                 self.msgs.append(self.tempDict[i]!)
             }
-            self.alert.dismiss(animated: true, completion: {
-                self.msgsCollection.reloadData()
-            })
+            
+            self.msgsCollection.reloadData()
+            self.alert.dismiss(animated: true, completion: nil)
         })
-        
     }
     
     
