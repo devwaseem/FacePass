@@ -1,5 +1,5 @@
+> :warning: **THIS PROJECT IS NO LONGER MAITAINED**
 # Project FacePass
-
 
 ![Alt text](https://pbs.twimg.com/media/DLhGc5wUEAAAXMm.jpg "FacePass")
 
@@ -10,6 +10,8 @@ We developed a Ask.fm / Sarahah clone but with facial recognition capabilities w
 ## How the App Looks
 ![Alt text](https://pbs.twimg.com/media/DQsR_HRW0AA3m2G.jpg)
 ![Alt text](https://pbs.twimg.com/media/DQsR_HNWkAAzQjU.jpg)
+
+
 
 ## API Installation: (local machine)
 
